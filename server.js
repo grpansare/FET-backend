@@ -18,7 +18,7 @@ const DecryptedFile = require("./models/decryptedFile");
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow requests from your frontend
+    origin: "https://file-encryption-tool.netlify.app", // Allow requests from your frontend
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
