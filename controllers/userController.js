@@ -2,7 +2,7 @@
 
 const authService = require('../services/authService');
 const emailService = require('../services/emailService');
-const logger = require('../Utils/logger');
+
 
 /**
  * Register a new user
