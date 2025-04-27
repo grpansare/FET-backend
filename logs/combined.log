@@ -1,0 +1,220 @@
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:26:30"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:26:30"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:27:38"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:27:38"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:28:22"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:28:22"}
+{"level":"info","message":"=========== VERIFICATION EMAIL ===========","service":"user-registration-api","timestamp":"2025-04-14 13:28:48"}
+{"level":"info","message":"To: grpansare02@gmail.com","service":"user-registration-api","timestamp":"2025-04-14 13:28:48"}
+{"level":"info","message":"Subject: Verify Your Account","service":"user-registration-api","timestamp":"2025-04-14 13:28:48"}
+{"level":"info","message":"Verification URL: undefined/verify-email/b9bd30dcd541bf887f31c5872e02651a0b5125050c474f0a28304812c1344ee1","service":"user-registration-api","timestamp":"2025-04-14 13:28:48"}
+{"level":"info","message":"=========================================","service":"user-registration-api","timestamp":"2025-04-14 13:28:48"}
+{"level":"info","message":"=========== VERIFICATION EMAIL ===========","service":"user-registration-api","timestamp":"2025-04-14 13:31:43"}
+{"level":"info","message":"To: grpansare02@gmail.com","service":"user-registration-api","timestamp":"2025-04-14 13:31:43"}
+{"level":"info","message":"Subject: Verify Your Account","service":"user-registration-api","timestamp":"2025-04-14 13:31:43"}
+{"level":"info","message":"Verification URL: undefined/verify-email/186318e4f609a713e70ab380b7d9dca9bd3617a2ccc817db1e5f04553d1ac8dc","service":"user-registration-api","timestamp":"2025-04-14 13:31:43"}
+{"level":"info","message":"=========================================","service":"user-registration-api","timestamp":"2025-04-14 13:31:43"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: username_1 dup key: { username: \"grpansare\" }","service":"user-registration-api","timestamp":"2025-04-14 13:35:35"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: username_1 dup key: { username: \"grpansare\" }","service":"user-registration-api","timestamp":"2025-04-14 13:35:35"}
+{"level":"info","message":"=========== VERIFICATION EMAIL ===========","service":"user-registration-api","timestamp":"2025-04-14 13:35:50"}
+{"level":"info","message":"To: grpansare2002@gmail.com","service":"user-registration-api","timestamp":"2025-04-14 13:35:50"}
+{"level":"info","message":"Subject: Verify Your Account","service":"user-registration-api","timestamp":"2025-04-14 13:35:50"}
+{"level":"info","message":"Verification URL: undefined/verify-email/c7422cdaf2365105be8e96c2fbf19cde146abc91771cbfd02d00c755968a8e85","service":"user-registration-api","timestamp":"2025-04-14 13:35:50"}
+{"level":"info","message":"=========================================","service":"user-registration-api","timestamp":"2025-04-14 13:35:50"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:36:24"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:36:24"}
+{"level":"info","message":"=========== VERIFICATION EMAIL ===========","service":"user-registration-api","timestamp":"2025-04-14 13:37:13"}
+{"level":"info","message":"To: grpansare2002@gmail.com","service":"user-registration-api","timestamp":"2025-04-14 13:37:13"}
+{"level":"info","message":"Subject: Verify Your Account","service":"user-registration-api","timestamp":"2025-04-14 13:37:13"}
+{"level":"info","message":"Verification URL: undefined/verify-email/7ed61263cbd47cbbf00e3f3c23efb31b1195ebdd5bd4b8ed328e1a0ac478f3c3","service":"user-registration-api","timestamp":"2025-04-14 13:37:13"}
+{"level":"info","message":"=========================================","service":"user-registration-api","timestamp":"2025-04-14 13:37:13"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:38:12"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:38:12"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:40:41"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:40:41"}
+{"level":"info","message":"=========== VERIFICATION EMAIL ===========","service":"user-registration-api","timestamp":"2025-04-14 13:42:04"}
+{"level":"info","message":"To: grpansare2002@gmail.com","service":"user-registration-api","timestamp":"2025-04-14 13:42:04"}
+{"level":"info","message":"Subject: Verify Your Account","service":"user-registration-api","timestamp":"2025-04-14 13:42:04"}
+{"level":"info","message":"Verification URL: undefined/verify-email/570ebfdd99ea6009fc3b1dbd44a493f130b70d419f16efd3975e129f2ee7b5d5","service":"user-registration-api","timestamp":"2025-04-14 13:42:04"}
+{"level":"info","message":"=========================================","service":"user-registration-api","timestamp":"2025-04-14 13:42:04"}
+{"level":"info","message":"=========== VERIFICATION EMAIL ===========","service":"user-registration-api","timestamp":"2025-04-14 13:43:21"}
+{"level":"info","message":"To: grpansare2002@gmail.com","service":"user-registration-api","timestamp":"2025-04-14 13:43:21"}
+{"level":"info","message":"Subject: Verify Your Account","service":"user-registration-api","timestamp":"2025-04-14 13:43:21"}
+{"level":"info","message":"Verification URL: undefined/verify-email/faa6f9c7bf0e5956d5e1490174ec90f8db543cbf03a2e514fe0311b6bf678f52","service":"user-registration-api","timestamp":"2025-04-14 13:43:21"}
+{"level":"info","message":"=========================================","service":"user-registration-api","timestamp":"2025-04-14 13:43:21"}
+{"level":"info","message":"=========== VERIFICATION EMAIL ===========","service":"user-registration-api","timestamp":"2025-04-14 13:47:49"}
+{"level":"info","message":"To: grpansare2002@gmail.com","service":"user-registration-api","timestamp":"2025-04-14 13:47:49"}
+{"level":"info","message":"Subject: Verify Your Account","service":"user-registration-api","timestamp":"2025-04-14 13:47:49"}
+{"level":"info","message":"Verification URL: http://localhost:5173/verify-email/fb6697f3e8bfb24a95ca2fac91ae7f17d9a037633895ec01235391abcff1bbc1","service":"user-registration-api","timestamp":"2025-04-14 13:47:49"}
+{"level":"info","message":"=========================================","service":"user-registration-api","timestamp":"2025-04-14 13:47:49"}
+{"level":"info","message":"=========== VERIFICATION EMAIL ===========","service":"user-registration-api","timestamp":"2025-04-14 13:49:20"}
+{"level":"info","message":"To: grpansare2002@gmail.com","service":"user-registration-api","timestamp":"2025-04-14 13:49:20"}
+{"level":"info","message":"Subject: Verify Your Account","service":"user-registration-api","timestamp":"2025-04-14 13:49:20"}
+{"level":"info","message":"Verification URL: http://localhost:5173/verify-email/f936c95fbeb845c60a7ece4859a9a9b9a8730dabb34110f9180d1d9b438eb1f6","service":"user-registration-api","timestamp":"2025-04-14 13:49:20"}
+{"level":"info","message":"=========================================","service":"user-registration-api","timestamp":"2025-04-14 13:49:20"}
+{"level":"error","message":"Error sending verification email: getaddrinfo ENOTFOUND smtp.example.com","service":"user-registration-api","timestamp":"2025-04-14 13:51:22"}
+{"level":"error","message":"Register error: getaddrinfo ENOTFOUND smtp.example.com","service":"user-registration-api","timestamp":"2025-04-14 13:51:22"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:52:23"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:52:23"}
+{"level":"error","message":"Error sending verification email: connect ECONNREFUSED 127.0.0.1:587","service":"user-registration-api","timestamp":"2025-04-14 13:53:17"}
+{"level":"error","message":"Register error: connect ECONNREFUSED 127.0.0.1:587","service":"user-registration-api","timestamp":"2025-04-14 13:53:17"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:57:08"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:57:08"}
+{"level":"error","message":"Error sending verification email: Unexpected socket close","service":"user-registration-api","timestamp":"2025-04-14 13:57:32"}
+{"level":"error","message":"Register error: Unexpected socket close","service":"user-registration-api","timestamp":"2025-04-14 13:57:32"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:57:56"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-14 13:57:56"}
+{"level":"error","message":"Error sending verification email: Unexpected socket close","service":"user-registration-api","timestamp":"2025-04-14 13:58:02"}
+{"level":"error","message":"Register error: Unexpected socket close","service":"user-registration-api","timestamp":"2025-04-14 13:58:02"}
+{"level":"info","message":"Verification email sent to grpansare2002@gmail.com","service":"user-registration-api","timestamp":"2025-04-14 13:59:51"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-15 19:14:16"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:16:15"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:17:43"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:21:48"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:21:48"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:24:03"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:25:54"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:25:54"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:27:00"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:27:00"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:27:35"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:28:10"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:28:18"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:28:27"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:28:34"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:28:34"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:29:19"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:29:36"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:29:43"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:29:43"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:30:17"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:30:21"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare2002@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:30:21"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: username_1 dup key: { username: \"grpansare\" }","service":"user-registration-api","timestamp":"2025-04-16 20:31:15"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: username_1 dup key: { username: \"grpansare\" }","service":"user-registration-api","timestamp":"2025-04-16 20:31:15"}
+{"level":"error","message":"Error creating user: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare795@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:31:57"}
+{"level":"error","message":"Register error: E11000 duplicate key error collection: FileEncryption.users index: email_1 dup key: { email: \"grpansare795@gmail.com\" }","service":"user-registration-api","timestamp":"2025-04-16 20:31:57"}
+{"level":"info","message":"Verification email sent to grpansare795@gmail.com","service":"user-registration-api","timestamp":"2025-04-16 20:32:01"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:34:02"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:40:15"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:45:48"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:45:57"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:46:06"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:47:50"}
+{"level":"error","message":"Authentication error: Illegal arguments: undefined, string","service":"user-registration-api","timestamp":"2025-04-16 20:49:01"}
+{"level":"error","message":"Login error: Illegal arguments: undefined, string","service":"user-registration-api","timestamp":"2025-04-16 20:49:01"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:49:35"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:49:44"}
+{"level":"error","message":"Authentication error: Illegal arguments: undefined, string","service":"user-registration-api","timestamp":"2025-04-16 20:50:13"}
+{"level":"error","message":"Login error: Illegal arguments: undefined, string","service":"user-registration-api","timestamp":"2025-04-16 20:50:13"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:53:48"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:53:53"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:54:55"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-16 20:55:03"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-17 17:03:55"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-17 17:10:29"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-17 17:10:42"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-17 17:13:19"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-17 17:14:41"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-17 17:17:57"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-17 17:18:31"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-17 17:18:37"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-17 17:18:47"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-20 12:22:11"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-20 12:22:59"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 19:00:54"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 19:01:52"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 20:46:41"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 21:09:31"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:09:58"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:29:15"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:29:22"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:29:39"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:30:52"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:31:17"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:37:02"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:37:20"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:37:33"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-22 22:50:08"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 19:50:35"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 19:57:41"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 19:58:13"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 19:58:22"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 19:59:18"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 19:59:54"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:00:40"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:02:46"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:02:59"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:09:30"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:24:44"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:34:43"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:36:39"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:43:19"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:45:38"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:47:33"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:47:44"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:47:51"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:48:23"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:48:51"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:48:57"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:50:01"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:50:05"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:50:11"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:51:03"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:51:29"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:51:44"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:52:06"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:52:16"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:52:25"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:52:33"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:56:15"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:56:21"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 20:56:25"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 21:00:40"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-26 21:02:27"}
+{"level":"info","message":"Cleaned 9 expired files","service":"user-registration-api","timestamp":"2025-04-26 22:30:50"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 10:20:03"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 10:58:19"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:05:31"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:05:39"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:06:04"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:06:18"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:07:03"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:08:09"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:08:49"}
+{"level":"error","message":"Error: getaddrinfo ENOTFOUND smtp.gmail.com","service":"user-registration-api","timestamp":"2025-04-27 11:08:53"}
+{"level":"error","message":"Error: getaddrinfo ENOTFOUND smtp.gmail.com\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)","service":"user-registration-api","timestamp":"2025-04-27 11:08:53"}
+{"level":"error","message":"Error: getaddrinfo ENOTFOUND smtp.gmail.com","service":"user-registration-api","timestamp":"2025-04-27 11:09:12"}
+{"level":"error","message":"Error: getaddrinfo ENOTFOUND smtp.gmail.com\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)","service":"user-registration-api","timestamp":"2025-04-27 11:09:12"}
+{"level":"error","message":"Error: getaddrinfo ENOTFOUND smtp.gmail.com","service":"user-registration-api","timestamp":"2025-04-27 11:09:13"}
+{"level":"error","message":"Error: getaddrinfo ENOTFOUND smtp.gmail.com\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)","service":"user-registration-api","timestamp":"2025-04-27 11:09:13"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:10:34"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:10:39"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:10:49"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:10:55"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:17:28"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:27:17"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 11:52:23"}
+{"level":"info","message":"Cleaned 0 expired files","service":"user-registration-api","timestamp":"2025-04-27 12:52:23"}
+{"level":"info","message":"Cleaned 0 expired files","service":"user-registration-api","timestamp":"2025-04-27 13:52:23"}
+{"level":"info","message":"Cleaned 0 expired files","service":"user-registration-api","timestamp":"2025-04-27 14:52:23"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:46:39"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:49:13"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:49:33"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:49:50"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:50:01"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:53:05"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:53:14"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:56:42"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:56:47"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:56:50"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:57:01"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:57:04"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:57:42"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:57:47"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:57:50"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 15:58:16"}
+{"level":"info","message":"Server running on port 5000","service":"user-registration-api","timestamp":"2025-04-27 17:51:55"}
+{"level":"info","message":"Cleaned 0 expired files","service":"user-registration-api","timestamp":"2025-04-27 18:51:55"}
+{"level":"info","message":"Cleaned 0 expired files","service":"user-registration-api","timestamp":"2025-04-27 19:51:55"}
+{"level":"info","message":"Cleaned 4 expired files","service":"user-registration-api","timestamp":"2025-04-27 20:51:55"}

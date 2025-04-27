@@ -1,0 +1,305 @@
+Task:
+Read file contents using a secure stream 
+Encrypt file using AES with the generated/derived key
+use a specific format for encrypted files show real time progress for large 
+store encrypted file temporarily for download
+
+Code:
+// server.js - Main Express server file
+const express = require('express');
+const multer = require('multer');
+const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
+const cors = require('cors');
+const { createServer } = require('http');
+const { Server } = require('socket.io');
+const mongoose = require('mongoose');
+
+// Initialize express app
+const app = express();
+const httpServer = createServer(app);
+const io = new Server(httpServer, {
+  cors: {
+    origin: '*',
+    methods: ['GET', 'POST']
+  }
+});
+
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost:27017/file-encryption', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('Connected to MongoDB'))
+.catch(err => console.error('MongoDB connection error:', err));
+
+// Configure temporary storage for uploaded files
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    const uploadDir = path.join(__dirname, 'uploads');
+    if (!fs.existsSync(uploadDir)) {
+      fs.mkdirSync(uploadDir, { recursive: true });
+    }
+    cb(null, uploadDir);
+  },
+  filename: (req, file, cb) => {
+    cb(null, ${Date.now()}-${file.originalname});
+  }
+});
+
+// Create a temp directory for encrypted files
+const encryptedDir = path.join(__dirname, 'encrypted');
+if (!fs.existsSync(encryptedDir)) {
+  fs.mkdirSync(encryptedDir, { recursive: true });
+}
+
+const upload = multer({ storage });
+
+// Middleware
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Define File model schema
+const FileSchema = new mongoose.Schema({
+  originalName: String,
+  encryptedName: String,
+  encryptionKey: String,
+  iv: String,
+  size: Number,
+  format: String,
+  encryptedPath: String,
+  createdAt: { type: Date, default: Date.now },
+  expiresAt: Date
+});
+
+const File = mongoose.model('File', FileSchema);
+
+// Socket.io for real-time progress
+io.on('connection', (socket) => {
+  console.log('Client connected:', socket.id);
+  
+  socket.on('disconnect', () => {
+    console.log('Client disconnected:', socket.id);
+  });
+});
+
+// Utility function to generate encryption key from password
+function deriveKey(password, salt) {
+  // PBKDF2 with 100,000 iterations and 256-bit key
+  return crypto.pbkdf2Sync(password, salt, 100000, 32, 'sha512');
+}
+
+// Encrypt a file using AES-256-GCM
+async function encryptFile(sourceFile, destinationFile, password, socketId) {
+  return new Promise((resolve, reject) => {
+    // Generate a random salt
+    const salt = crypto.randomBytes(16);
+    // Derive key from password
+    const key = deriveKey(password, salt);
+    // Generate a random IV
+    const iv = crypto.randomBytes(16);
+
+    // Create cipher using AES-256-GCM
+    const cipher = crypto.createCipheriv('aes-256-gcm', key, iv);
+    
+    // Create read and write streams
+    const readStream = fs.createReadStream(sourceFile);
+    const writeStream = fs.createWriteStream(destinationFile);
+    
+    // Get file size for progress calculation
+    const fileSize = fs.statSync(sourceFile).size;
+    let bytesProcessed = 0;
+    let lastPercentReported = 0;
+    
+    // Write custom header with encryption metadata (salt and iv)
+    const header = Buffer.concat([
+      Buffer.from('AESENC', 'utf8'),  // Magic bytes for identifying our format
+      salt,                           // 16 bytes for salt
+      iv                              // 16 bytes for IV
+    ]);
+    writeStream.write(header);
+    
+    // Set up error handlers
+    readStream.on('error', err => reject(err));
+    writeStream.on('error', err => reject(err));
+    
+    // Process the file
+    readStream.on('data', chunk => {
+      bytesProcessed += chunk.length;
+      const percent = Math.floor((bytesProcessed / fileSize) * 100);
+      
+      // Report progress every 5%
+      if (percent >= lastPercentReported + 5) {
+        lastPercentReported = percent;
+        io.to(socketId).emit('encryption-progress', { percent });
+      }
+      
+      // Process the chunk
+      const encryptedChunk = cipher.update(chunk);
+      if (encryptedChunk.length > 0) {
+        writeStream.write(encryptedChunk);
+      }
+    });
+    
+    // Finalize encryption
+    readStream.on('end', () => {
+      try {
+        const final = cipher.final();
+        if (final.length > 0) {
+          writeStream.write(final);
+        }
+        
+        // Get authentication tag and write it at the end
+        const authTag = cipher.getAuthTag();
+        writeStream.write(authTag);
+        
+        writeStream.end();
+        
+        // Send 100% completion
+        io.to(socketId).emit('encryption-progress', { percent: 100 });
+        
+        writeStream.on('finish', () => {
+          resolve({
+            key: key.toString('base64'),
+            iv: iv.toString('base64'),
+            salt: salt.toString('base64'),
+            authTag: authTag.toString('base64')
+          });
+        });
+      } catch (err) {
+        reject(err);
+      }
+    });
+  });
+}
+
+// File upload and encryption endpoint
+app.post('/api/encrypt', upload.single('file'), async (req, res) => {
+  try {
+    const { file } = req;
+    const { password } = req.body;
+    const socketId = req.body.socketId;
+    
+    if (!file) {
+      return res.status(400).json({ error: 'No file uploaded' });
+    }
+    
+    // Create a unique encrypted filename
+    const encryptedFilename = ${Date.now()}-encrypted-${path.parse(file.originalname).name}.enc;
+    const encryptedFilePath = path.join(encryptedDir, encryptedFilename);
+    
+    // Encrypt the file with progress reporting
+    const encryptionResult = await encryptFile(
+      file.path, 
+      encryptedFilePath, 
+      password || crypto.randomBytes(32).toString('hex'),
+      socketId
+    );
+    
+    // Set expiration (24 hours)
+    const expiresAt = new Date();
+    expiresAt.setHours(expiresAt.getHours() + 24);
+    
+    // Create file record in database
+    const fileRecord = new File({
+      originalName: file.originalname,
+      encryptedName: encryptedFilename,
+      encryptionKey: encryptionResult.key,
+      iv: encryptionResult.iv,
+      size: file.size,
+      format: 'AESENC',
+      encryptedPath: encryptedFilePath,
+      expiresAt
+    });
+    
+    await fileRecord.save();
+    
+    // Remove the original uploaded file
+    fs.unlinkSync(file.path);
+    
+    // Return file information
+    res.status(200).json({
+      fileId: fileRecord._id,
+      originalName: file.originalname,
+      encryptedName: encryptedFilename,
+      expiresAt
+    });
+    
+  } catch (error) {
+    console.error('Encryption error:', error);
+    res.status(500).json({ error: 'File encryption failed' });
+  }
+});
+
+// Get encrypted file for download
+app.get('/api/download/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    
+    // Find the file record
+    const fileRecord = await File.findById(id);
+    
+    if (!fileRecord) {
+      return res.status(404).json({ error: 'File not found' });
+    }
+    
+    // Check if file is expired
+    if (new Date() > new Date(fileRecord.expiresAt)) {
+      // Remove expired file
+      if (fs.existsSync(fileRecord.encryptedPath)) {
+        fs.unlinkSync(fileRecord.encryptedPath);
+      }
+      await File.findByIdAndDelete(id);
+      return res.status(404).json({ error: 'File has expired' });
+    }
+    
+    // Check if file exists on disk
+    if (!fs.existsSync(fileRecord.encryptedPath)) {
+      await File.findByIdAndDelete(id);
+      return res.status(404).json({ error: 'File not found on disk' });
+    }
+    
+    // Set headers for download
+    res.set({
+      'Content-Disposition': attachment; filename="${fileRecord.encryptedName}",
+      'Content-Type': 'application/octet-stream'
+    });
+    
+    // Stream the file to the response
+    const fileStream = fs.createReadStream(fileRecord.encryptedPath);
+    fileStream.pipe(res);
+    
+  } catch (error) {
+    console.error('Download error:', error);
+    res.status(500).json({ error: 'File download failed' });
+  }
+});
+
+// Scheduled job to clean expired files (should be run with a process manager like pm2)
+async function cleanExpiredFiles() {
+  try {
+    const expiredFiles = await File.find({ expiresAt: { $lt: new Date() } });
+    
+    for (const file of expiredFiles) {
+      if (fs.existsSync(file.encryptedPath)) {
+        fs.unlinkSync(file.encryptedPath);
+      }
+      await File.findByIdAndDelete(file._id);
+    }
+    
+    console.log(Cleaned ${expiredFiles.length} expired files);
+  } catch (error) {
+    console.error('Error cleaning expired files:', error);
+  }
+}
+
+// Run cleanup job every hour
+setInterval(cleanExpiredFiles, 60 * 60 * 1000);
+
+// Start server
+const PORT = process.env.PORT || 5000;
+httpServer.listen(PORT, () => {
+  console.log(Server running on port ${PORT});
+});
