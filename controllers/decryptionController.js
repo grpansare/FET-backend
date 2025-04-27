@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const DecryptedFile = require('../models/decryptedFile');
 // Import model for encryption info
-const { decryptFile } = require('../utils/decryptionUtils');
+const { decryptFile } = require("../Utils/decryptionUtils");
 const File = require('../models/File');
 const { log } = require('winston');
 
