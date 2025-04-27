@@ -11,7 +11,7 @@ const { errorHandler } = require("./Utils/errorHandler");
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
-const { cleanExpiredDecryptedFiles } = require("./utils/decryptionUtils");
+const { cleanExpiredDecryptedFiles } = require("./Utils/decryptionUtils");
 const File = require("./models/File");
 const DecryptedFile = require("./models/decryptedFile");
 
