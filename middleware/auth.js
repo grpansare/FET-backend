@@ -3,7 +3,7 @@
 const jwt = require('jsonwebtoken');
 const { JWT_SECRET } = require('../config/environment');
 const User = require('../models/User');
-const logger = require('../utils/logger');
+
 
 /**
  * Authentication middleware
